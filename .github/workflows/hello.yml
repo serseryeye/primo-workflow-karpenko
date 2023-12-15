@@ -1,0 +1,13 @@
+name: Print From File 
+on: push
+
+jobs:
+  print:
+    runs-on: ubunto-latest
+    steps:
+       - name: check out repository
+         uses: actions/checkout@v3
+        
+       - name: Print hello-world on terminal
+         run: echo '(hello_world.txt)'
+
